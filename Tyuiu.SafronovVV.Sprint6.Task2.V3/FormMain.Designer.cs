@@ -29,29 +29,29 @@ namespace Tyuiu.SafronovVV.Sprint6.Task2.V3
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.buttonDone_VSS = new System.Windows.Forms.Button();
             this.buttonHelp_VSS = new System.Windows.Forms.Button();
             this.groupBoxTask1_SVV = new System.Windows.Forms.GroupBox();
-            this.groupBoxTask2_SVV = new System.Windows.Forms.GroupBox();
-            this.groupBoxTask3_SVV = new System.Windows.Forms.GroupBox();
-            this.textBoxStartValue_SVV = new System.Windows.Forms.TextBox();
-            this.textBoxStopValue_SVV = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxUslovie_SVV = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBoxStopValue_SVV = new System.Windows.Forms.TextBox();
+            this.textBoxStartValue_SVV = new System.Windows.Forms.TextBox();
+            this.groupBoxTask2_SVV = new System.Windows.Forms.GroupBox();
+            this.chartFunction_SVV = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridViewFunction_SVV = new System.Windows.Forms.DataGridView();
             this.X = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Y = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chartFunction_SVV = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.label3 = new System.Windows.Forms.Label();
+            this.groupBoxTask3_SVV = new System.Windows.Forms.GroupBox();
+            this.textBoxUslovie_SVV = new System.Windows.Forms.TextBox();
             this.groupBoxTask1_SVV.SuspendLayout();
             this.groupBoxTask2_SVV.SuspendLayout();
-            this.groupBoxTask3_SVV.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SVV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SVV)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SVV)).BeginInit();
+            this.groupBoxTask3_SVV.SuspendLayout();
             this.SuspendLayout();
             // 
             // buttonDone_VSS
@@ -95,6 +95,38 @@ namespace Tyuiu.SafronovVV.Sprint6.Task2.V3
             this.groupBoxTask1_SVV.TabStop = false;
             this.groupBoxTask1_SVV.Text = "Ввод данных";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(265, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(92, 18);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Конец шага:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(30, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(90, 18);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Старт шага:";
+            // 
+            // textBoxStopValue_SVV
+            // 
+            this.textBoxStopValue_SVV.Location = new System.Drawing.Point(268, 60);
+            this.textBoxStopValue_SVV.Name = "textBoxStopValue_SVV";
+            this.textBoxStopValue_SVV.Size = new System.Drawing.Size(190, 24);
+            this.textBoxStopValue_SVV.TabIndex = 1;
+            // 
+            // textBoxStartValue_SVV
+            // 
+            this.textBoxStartValue_SVV.Location = new System.Drawing.Point(33, 60);
+            this.textBoxStartValue_SVV.Name = "textBoxStartValue_SVV";
+            this.textBoxStartValue_SVV.Size = new System.Drawing.Size(190, 24);
+            this.textBoxStartValue_SVV.TabIndex = 0;
+            // 
             // groupBoxTask2_SVV
             // 
             this.groupBoxTask2_SVV.Controls.Add(this.chartFunction_SVV);
@@ -108,66 +140,23 @@ namespace Tyuiu.SafronovVV.Sprint6.Task2.V3
             this.groupBoxTask2_SVV.TabStop = false;
             this.groupBoxTask2_SVV.Text = "Вывод данных";
             // 
-            // groupBoxTask3_SVV
+            // chartFunction_SVV
             // 
-            this.groupBoxTask3_SVV.Controls.Add(this.textBoxUslovie_SVV);
-            this.groupBoxTask3_SVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
-            this.groupBoxTask3_SVV.Location = new System.Drawing.Point(12, 12);
-            this.groupBoxTask3_SVV.Name = "groupBoxTask3_SVV";
-            this.groupBoxTask3_SVV.Size = new System.Drawing.Size(785, 318);
-            this.groupBoxTask3_SVV.TabIndex = 3;
-            this.groupBoxTask3_SVV.TabStop = false;
-            this.groupBoxTask3_SVV.Text = "Условие";
-            // 
-            // textBoxStartValue_SVV
-            // 
-            this.textBoxStartValue_SVV.Location = new System.Drawing.Point(33, 60);
-            this.textBoxStartValue_SVV.Name = "textBoxStartValue_SVV";
-            this.textBoxStartValue_SVV.Size = new System.Drawing.Size(190, 24);
-            this.textBoxStartValue_SVV.TabIndex = 0;
-            // 
-            // textBoxStopValue_SVV
-            // 
-            this.textBoxStopValue_SVV.Location = new System.Drawing.Point(268, 60);
-            this.textBoxStopValue_SVV.Name = "textBoxStopValue_SVV";
-            this.textBoxStopValue_SVV.Size = new System.Drawing.Size(190, 24);
-            this.textBoxStopValue_SVV.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Старт шага:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(265, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 18);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Конец шага:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Результат:";
-            // 
-            // textBoxUslovie_SVV
-            // 
-            this.textBoxUslovie_SVV.Location = new System.Drawing.Point(6, 23);
-            this.textBoxUslovie_SVV.Multiline = true;
-            this.textBoxUslovie_SVV.Name = "textBoxUslovie_SVV";
-            this.textBoxUslovie_SVV.ReadOnly = true;
-            this.textBoxUslovie_SVV.Size = new System.Drawing.Size(773, 277);
-            this.textBoxUslovie_SVV.TabIndex = 6;
+            chartArea1.Name = "ChartArea1";
+            this.chartFunction_SVV.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartFunction_SVV.Legends.Add(legend1);
+            this.chartFunction_SVV.Location = new System.Drawing.Point(133, 51);
+            this.chartFunction_SVV.Name = "chartFunction_SVV";
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series1.IsVisibleInLegend = false;
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chartFunction_SVV.Series.Add(series1);
+            this.chartFunction_SVV.Size = new System.Drawing.Size(431, 369);
+            this.chartFunction_SVV.TabIndex = 7;
+            this.chartFunction_SVV.Text = "chart1";
             // 
             // dataGridViewFunction_SVV
             // 
@@ -194,23 +183,34 @@ namespace Tyuiu.SafronovVV.Sprint6.Task2.V3
             this.Y.Name = "Y";
             this.Y.Width = 50;
             // 
-            // chartFunction_SVV
+            // label3
             // 
-            chartArea5.Name = "ChartArea1";
-            this.chartFunction_SVV.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartFunction_SVV.Legends.Add(legend5);
-            this.chartFunction_SVV.Location = new System.Drawing.Point(133, 51);
-            this.chartFunction_SVV.Name = "chartFunction_SVV";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series5.IsVisibleInLegend = false;
-            series5.Legend = "Legend1";
-            series5.Name = "Series1";
-            this.chartFunction_SVV.Series.Add(series5);
-            this.chartFunction_SVV.Size = new System.Drawing.Size(431, 369);
-            this.chartFunction_SVV.TabIndex = 7;
-            this.chartFunction_SVV.Text = "chart1";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(84, 18);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Результат:";
+            // 
+            // groupBoxTask3_SVV
+            // 
+            this.groupBoxTask3_SVV.Controls.Add(this.textBoxUslovie_SVV);
+            this.groupBoxTask3_SVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.groupBoxTask3_SVV.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxTask3_SVV.Name = "groupBoxTask3_SVV";
+            this.groupBoxTask3_SVV.Size = new System.Drawing.Size(785, 318);
+            this.groupBoxTask3_SVV.TabIndex = 3;
+            this.groupBoxTask3_SVV.TabStop = false;
+            this.groupBoxTask3_SVV.Text = "Условие";
+            // 
+            // textBoxUslovie_SVV
+            // 
+            this.textBoxUslovie_SVV.Location = new System.Drawing.Point(6, 23);
+            this.textBoxUslovie_SVV.Multiline = true;
+            this.textBoxUslovie_SVV.Name = "textBoxUslovie_SVV";
+            this.textBoxUslovie_SVV.ReadOnly = true;
+            this.textBoxUslovie_SVV.Size = new System.Drawing.Size(773, 277);
+            this.textBoxUslovie_SVV.TabIndex = 6;
             // 
             // FormMain
             // 
@@ -231,10 +231,10 @@ namespace Tyuiu.SafronovVV.Sprint6.Task2.V3
             this.groupBoxTask1_SVV.PerformLayout();
             this.groupBoxTask2_SVV.ResumeLayout(false);
             this.groupBoxTask2_SVV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SVV)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SVV)).EndInit();
             this.groupBoxTask3_SVV.ResumeLayout(false);
             this.groupBoxTask3_SVV.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFunction_SVV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartFunction_SVV)).EndInit();
             this.ResumeLayout(false);
 
         }
